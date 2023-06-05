@@ -1,0 +1,10 @@
+.arrow{
+    width: 3%;
+    height: 115px;
+}
+.btn-arrow{ 
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    bottom: 300px;
+}
