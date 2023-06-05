@@ -35,7 +35,7 @@ const OfFerBnr = () => {
 
   return (
     <>
-      <div>
+      <div style={{height:"450px"}}>
         {banner.map((items, index) => {
           return (
             <div key={index}>

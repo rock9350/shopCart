@@ -1,0 +1,21 @@
+.categorybtn {
+  font-family: Century Gothic;
+  /* margin-left: 20%; */
+  padding: 5%;
+  width: 15vw;
+  /* margin-top: 50px; */
+  /* margin-bottom: 50px; */
+  background: white;
+  border: 1px solid black;
+  text-align: center;
+  display: inline-block;
+  box-shadow: 1px 1px 1px 1px black;
+}
+.categorybtn:hover {
+  background: black;
+  color: white;
+}
+.category {
+  display: flex;
+  justify-content: space-evenly;
+}
