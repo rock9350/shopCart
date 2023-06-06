@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import style from "./page.module.css";
 
 const FetchCategory = () => {
-  const [product , setproduct] = useState([]);
+  const [product, setproduct] = useState([]);
   const get = async () => {
     try {
-      const res = await fetch(`https://fakestoreapi.com/products/category/electronics`);
+      const res = await fetch(
+        `https://fakestoreapi.com/products/category/electronics`
+      );
       const data = await res.json();
-      setproduct(data)
+      setproduct(data);
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -22,12 +24,14 @@ const FetchCategory = () => {
     "women's clothing",
   ];
 
-  const GetProduct = async(category: any) => {
+  const GetProduct = async (category: any) => {
     console.log(category);
     try {
-      const res = await fetch(`https://fakestoreapi.com/products/category/${category}`);
+      const res = await fetch(
+        `https://fakestoreapi.com/products/category/${category}`
+      );
       const data = await res.json();
-      setproduct(data)
+      setproduct(data);
       console.log(data);
     } catch (error) {
       console.log(error);
@@ -39,7 +43,7 @@ const FetchCategory = () => {
   }, []);
   return (
     <>
-      <div>
+      <div className={style["category-product"]}>
         <div className={style["category"]}>
           {category.map((items, index) => {
             return (
@@ -54,20 +58,27 @@ const FetchCategory = () => {
             );
           })}
         </div>
-        <div>
-          {
-              product.map((items:any,index)=>{
-                 return(
-                  <>
-                  <div key={index}>
-                    <img src={items.image} width="100px"></img>
-                    <p>{items.title}</p>
-                    <p>{items.price}</p>
+        <div className={style["product"]}>
+          {product.map((items: any, index) => {
+            return (
+              <>
+                <div key={index} className={style["productBox"]}>
+                  <div className={style["productDetails"]}>
+                    <img
+                      src={items.image}
+                      className={style["productImg"]}
+                    ></img>
                   </div>
-                  </>
-                 )
-              })
-          }
+                  <div className={style["productDetails"]}>
+                    <p className={style["productTitle"]}>{items.title}</p>
+                  </div>
+                  <div className={style["productDetails"]}>
+                    <p className={style["productPrice"]}>Price : ${items.price}</p>
+                  </div>
+                </div>
+              </>
+            );
+          })}
         </div>
       </div>
     </>
