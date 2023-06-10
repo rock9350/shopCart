@@ -1,0 +1,43 @@
+.cartbox {
+  border: 1px solid black;
+  font-family: Courier New;
+  width: 50vw;
+  position: absolute;
+  top: 8%;
+  left: 35%;
+  background-color: white;
+  box-shadow: 2px 2px 1px black;
+  border: 2px solid black;
+}
+.itemsCount {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 15px;
+}
+.itemsCount > p {
+  font-weight: 700;
+
+}
+.productbox {
+  display: flex;
+  align-items: center;
+  font-family: Courier New;
+  justify-content: space-between;
+  padding: 2%;
+}
+.productImg {
+  width: 8%;
+}
+.btn {
+  width: 25px;
+  height: 25px;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  font-weight: 600;
+  margin: 0px 10px 0px 10px;
+  background-color: rgb(255, 255, 255);
+}
+.btn:hover {
+  box-shadow: 2px 2px 1px black;
+}

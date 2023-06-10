@@ -8,3 +8,8 @@
     position: relative;
     bottom: 300px;
 }
+.offerBannerImg{
+    width: 100%;
+    border: 15px solid rgb(0, 149, 255);
+    opacity: .7;
+}

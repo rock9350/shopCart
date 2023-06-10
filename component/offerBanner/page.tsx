@@ -45,6 +45,7 @@ const OfFerBnr = () => {
                 width="1485"
                 height="450"
                 alt={`banner${items}`}
+                className={style["offerBannerImg"]}
               ></Image>
             </div>
           );

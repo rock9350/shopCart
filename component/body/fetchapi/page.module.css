@@ -63,3 +63,17 @@
   background: rgb(237, 97, 120);
   border: 15px solid white;
 }
+.addcart{
+  width: 25px;
+  height: 25px;
+  position: relative;
+  bottom: 27px;
+  left: 15%;
+  border: 1px solid black;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 2px 1px black;
+}
+.addcart:hover{
+ background-color: rgb(0, 0, 0);
+}
